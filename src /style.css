@@ -1,1 +1,89 @@
+body {
+    font-family: -apple-system, system-ui, sans-serif;
+    background-color: #f1c40f;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    user-select: none;
+}
 
+.game-container {
+    max-width: 390px;
+    height: 100vh;
+    margin: auto;
+    background: #fffbe6;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #e67e22;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.customer-zone {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    border-bottom: 3px dashed #e67e22;
+}
+
+.customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 80px;
+}
+
+.order-bubble {
+    background: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.timer-bar {
+    width: 100%;
+    height: 5px;
+    background: #eee;
+    margin-top: 5px;
+}
+
+.timer-fill {
+    height: 100%;
+    background: #27ae60;
+    width: 100%;
+}
+
+.kitchen-zone {
+    padding: 20px;
+    background: #fff;
+}
+
+.ingredients button {
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #eee;
+}
+
+.current-bowl {
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #e67e22;
+    border-radius: 10px;
+}
+
+.serve-btn { background: #27ae60; color: white; padding: 10px; border: none; border-radius: 5px; }
+.trash-btn { background: #e74c3c; color: white; padding: 10px; border: none; border-radius: 5px; }
