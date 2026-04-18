@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tiệm Mì Siêu Tốc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <span>Điểm: <b id="score">0</b></span>
+            <span>Máu: <b id="health">3</b></span>
+        </div>
+        
+        <div id="customers" class="customer-zone">
+            </div>
 
+        <div class="kitchen-zone">
+            <p>Chọn đúng nguyên liệu khách cần:</p>
+            <div class="ingredients">
+                <button onclick="addIngredient('🍜')">🍜 Mì</button>
+                <button onclick="addIngredient('🥩')">🥩 Thịt</button>
+                <button onclick="addIngredient('🥬')">🥬 Rau</button>
+                <button onclick="addIngredient('🥚')">🥚 Trứng</button>
+            </div>
+            <div class="current-bowl">
+                Tô hiện tại: <span id="bowl-content">Trống</span>
+                <button class="serve-btn" onclick="serveDish()">GIAO MÓN!</button>
+                <button class="trash-btn" onclick="clearBowl()">Đổ đi</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
